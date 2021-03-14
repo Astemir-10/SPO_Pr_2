@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SecondVC" customModule="SPO_Pr_2" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jw1-6c-Eac">
+                    <rect key="frame" x="20" y="20" width="440" height="149"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="shT-Zi-hPn">
+                            <rect key="frame" x="-2" y="132" width="52" height="18"/>
+                            <buttonCell key="cell" type="radio" title="Text" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="p7s-om-rDA">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didSelectText:" target="-2" id="Qtz-7Q-v4i"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="Wjw-cy-R3m">
+                            <rect key="frame" x="-2" y="108" width="65" height="18"/>
+                            <buttonCell key="cell" type="radio" title="Binary" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="P3N-wa-mlN">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didSelectBinary:" target="-2" id="1eC-Hy-3z6"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="s59-P9-JY3">
+                            <rect key="frame" x="-2" y="84" width="69" height="18"/>
+                            <buttonCell key="cell" type="radio" title="Double" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="mJ4-Yd-mHz">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didSelectDouble:" target="-2" id="oRT-7t-71C"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="CGX-cJ-W8V">
+                            <rect key="frame" x="-2" y="60" width="42" height="18"/>
+                            <buttonCell key="cell" type="radio" title="Int" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="lzB-gp-STb">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="didSelectInt:" target="-2" id="TAB-oh-Nqj"/>
+                            </connections>
+                        </button>
+                        <stackView distribution="fillEqually" orientation="horizontal" alignment="centerY" spacing="13" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bL1-Cc-alQ">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="53"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kdW-hl-xmt">
+                                    <rect key="frame" x="-7" y="10" width="64" height="32"/>
+                                    <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="A9u-ue-B7x">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="saveAction:" target="-2" id="SL0-h8-Tpm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <visibilityPriorities>
+                                <integer value="1000"/>
+                            </visibilityPriorities>
+                            <customSpacing>
+                                <real value="3.4028234663852886e+38"/>
+                            </customSpacing>
+                        </stackView>
+                    </subviews>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jw1-6c-Eac" secondAttribute="bottom" constant="20" id="0X6-DX-v5A"/>
+                <constraint firstAttribute="trailing" secondItem="Jw1-6c-Eac" secondAttribute="trailing" constant="20" id="HP7-EA-wEl"/>
+                <constraint firstItem="Jw1-6c-Eac" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="UFb-GC-yjY"/>
+                <constraint firstItem="Jw1-6c-Eac" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="b3D-Rt-rqL"/>
+            </constraints>
+            <point key="canvasLocation" x="67" y="101.5"/>
+        </customView>
+    </objects>
+</document>

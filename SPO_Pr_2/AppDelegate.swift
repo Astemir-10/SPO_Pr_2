@@ -7,14 +7,18 @@
 
 import Cocoa
 
-@main
+@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     
-
+    var main: NSWindowController!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+//        main = NSStoryboard(name: "Main", bundle: nil).instantiateInitialController() as! NSWindowController
+//        main.window?.contentViewController = ResultVC()
+//        main.window?.makeKeyAndOrderFront(nil)
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
